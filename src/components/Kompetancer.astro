@@ -1,0 +1,185 @@
+<div>
+  <h2>Kompetencer</h2>
+</div>
+<article class="grid_2x2">
+  <!-- Ændrer grid-klassen til grid_2x2 -->
+  <section class="border1 sec1">
+    <div class="div1">
+      <h4>Tools</h4>
+      <ul>
+        <li>Figma</li>
+        <li>XD</li>
+        <li>Photoshop</li>
+        <li>Visual Studio Code</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Astro</li>
+      </ul>
+    </div>
+  </section>
+  <section class="border1 sec2">
+    <h4>Interests</h4>
+    <ul>
+      <li>Photography</li>
+      <li>Dance</li>
+      <li>Yoga</li>
+      <li>Family</li>
+      <li>Friends</li>
+    </ul>
+  </section>
+  <section class="border1 sec3">
+    <h4>Language</h4>
+    <ul>
+      <li>Danish</li>
+      <li>English</li>
+      <li>Understanding of Scandinavian languages - Swedish & Norwegian.</li>
+    </ul>
+  </section>
+  <section class="border1 sec4">
+    <h4>Fun Facts</h4>
+    <ul>
+      <li>In 2008, I sang with Bruce Springsteen at Parken.</li>
+      <li>Huge love for True Crime</li>
+      <li>I danced from the age of 3 to 19.</li>
+    </ul>
+  </section>
+</article>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (min-width: 800px) {
+    article {
+      background-image: url(../assets/images/leaf.webp);
+      background-size: 104%;
+    }
+
+    .grid_2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* To kolonner */
+      gap: 10px; /* Tilføjer et lille mellemrum mellem boksene */
+    }
+    h2 {
+      margin-top: 5%;
+      margin-left: 68%;
+      font-family: Inter;
+      color: black;
+      font-weight: bold;
+    }
+    .border1 {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+      margin-left: 30%;
+    }
+
+    .div1 {
+      margin: 5%;
+    }
+    h4 {
+      color: black;
+      font-family: Inter;
+      font-weight: 900;
+      margin-bottom: 1%;
+    }
+
+    .sec1 {
+      margin-left: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .sec2 {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 50%;
+    }
+    .sec3 {
+      margin-left: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .sec4 {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 50%;
+    }
+    li {
+      color: black;
+      font-family: Montserrat;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 780px) {
+    article {
+      margin-top: 20%;
+      background-position: left top;
+      background-repeat: no-repeat;
+
+      background-image: url(../assets/images/leaf4.webp);
+      background-size: 47%;
+    }
+    h2 {
+      margin-top: 13%;
+      margin-left: 68%;
+      font-family: Inter;
+      color: black;
+      font-weight: bold;
+    }
+    .border1 {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+    }
+
+    .div1 {
+      margin: 5%;
+    }
+    h4 {
+      color: black;
+      font-family: Inter;
+      margin-bottom: 1%;
+    }
+
+    .sec1 {
+      margin-left: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .sec2 {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 55%;
+    }
+    .sec3 {
+      margin-left: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .sec4 {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 55%;
+    }
+    li {
+      color: black;
+      font-family: Montserrat;
+      line-height: 2rem;
+    }
+  }
+</style>

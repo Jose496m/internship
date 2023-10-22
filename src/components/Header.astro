@@ -1,0 +1,114 @@
+---
+import { Image } from "astro:assets";
+import forside from "../assets/images/header.webp";
+---
+
+<div class="billede-container billede1">
+  <Image class="forside1" src={forside} alt="forsidebillede" />
+  <h1>MULTIMEDIADESIGNER</h1>
+</div>
+<section>
+  <div class="text-container3"></div>
+
+  <div>
+    <div>
+      <h2>JOSEPHINE OLESEN</h2>
+    </div>
+    <div>
+      <p>WEB DESIGNER - WEB DEVELOPER</p>
+    </div>
+  </div>
+</section>
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (min-width: 800px) {
+    .forside1 {
+      width: 100vw;
+      height: 80vh;
+      object-fit: cover;
+
+      top: 0;
+      left: 0;
+    }
+
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .text-container {
+      width: 500px;
+      margin-left: 20%;
+      line-height: 1.7rem;
+      margin-top: -15%;
+    }
+    .text-container1 {
+      width: 500px;
+      line-height: 1.7rem;
+    }
+    h1 {
+      font-family: Inter;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+      margin-top: -15%;
+      margin-bottom: 1%;
+    }
+    h2 {
+      font-family: Inter;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+      margin-bottom: 1%;
+    }
+    p {
+      font-family: Montserrat;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+      margin-bottom: 1%;
+    }
+  }
+
+  @media (max-width: 780px) {
+    .forside1 {
+      max-width: 157%;
+      height: 50vh;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: var(--size-4);
+      margin-top: -40%;
+      margin-left: 60%;
+      font-family: Inter;
+      margin-bottom: 1%;
+    }
+    h2 {
+      margin-left: 70%;
+      font-size: 70%;
+      font-family: Inter;
+      margin-bottom: 1%;
+    }
+    p {
+      margin-left: 70%;
+      font-size: 50%;
+      font-family: Montserrat;
+      color: black;
+      margin-bottom: 1%;
+    }
+
+    .text-container {
+      width: 80%; /* Adjust as needed */
+      margin-left: 60%;
+    }
+  }
+</style>

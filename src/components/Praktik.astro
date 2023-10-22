@@ -1,0 +1,114 @@
+---
+import { Image } from "astro:assets";
+import praktik from "../assets/images/praktikside.webp";
+---
+
+<section class="grid_1-1">
+  <div class="streg">
+    <h2>My goals and expectations for the internship</h2>
+    <p>
+      As a multimedia designer with a passion for web design and frontend
+      development, I am seeking an exciting opportunity to enhance my skills in
+      user interface design and create innovative digital solutions. During my
+      internship, I expect to gain valuable hands-on experience in user-friendly
+      web design, explore the latest trends in web development, and continually
+      develop my skills. I look forward to immersing myself in the daily life of
+      a web designer, where I can find inspiration through collaboration with
+      the company and their talented team. My ultimate goal is to become a
+      skilled and valuable resource in web design, and I am determined to
+      positively contribute to any challenges that may come my way.
+    </p>
+  </div>
+</section>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (min-width: 800px) {
+    .streg {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+      margin-left: 30%;
+    }
+
+    section {
+      text-align: center;
+      padding: 3%;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/leaf.webp);
+      background-size: 42%;
+    }
+
+    .pic1 {
+      width: 60%;
+      height: 60%;
+      margin-top: 10%;
+      margin-left: 20%;
+    }
+
+    p {
+      line-height: 1.8rem;
+      text-align: left;
+      width: 100%;
+      margin-top: 3%;
+      font-family: Montserrat;
+      color: black;
+    }
+
+    h2 {
+      margin-top: 5%;
+      font-family: Inter;
+      font-size: 110%;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+
+  @media (max-width: 780px) {
+    .streg {
+      display: flex;
+      flex-direction: column;
+      width: 457px;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+      margin-left: 30%;
+    }
+
+    section {
+      background-image: url(../assets/images/leaf4.webp);
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 180px;
+      margin-top: 20%;
+    }
+
+    p {
+      text-align: left;
+      width: 363px;
+      margin-top: 3%;
+      font-family: Montserrat;
+      color: black;
+      line-height: 1.7rem;
+      font-size: 75%;
+    }
+    h2 {
+      font-family: Inter;
+      font-size: 99%;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+</style>
